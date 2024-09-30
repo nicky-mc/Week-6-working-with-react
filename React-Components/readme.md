@@ -1,10 +1,8 @@
 ## React Components
 
-Create aa react app
+Today I learn to create some components and structure for our new react app
 
-Create some components and structure for our new react app
-
-Write some jsx
+Learn to write some jsx
 
 https://react.dev/learn
 React improves the Flavour of our apps
