@@ -7,6 +7,7 @@ Create some components and structure for our new react app
 Write some jsx
 
 https://react.dev/learn
+React improves the Flavour of our apps
 
 Won't you take me to
 Flavourtown?
