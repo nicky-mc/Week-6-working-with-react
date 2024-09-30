@@ -1,10 +1,10 @@
-export default function Section() {
+export default function Section(props) {
   return (
     <div className="section">
       <div className="section-content">
-        <h2>Recent Launch</h2>
+        <h2>{props.subtitle}</h2>
         <br />
-        <h1>Ship Flight Video</h1>
+        <h1>{props.mainTitle}</h1>
         <br />
         <button>Read More</button>
         <br />

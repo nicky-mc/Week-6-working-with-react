@@ -1,8 +1,9 @@
 .section {
   background-image: url("../public/galaxy.jpeg");
-  background-size: cover no-repeat;
+  background-size: cover;
   background-position: center;
   color: white;
+  display: flex;
 }
 .navbar {
   display: flex;
@@ -12,6 +13,8 @@
   color: white;
   font-size: medium;
   text-shadow: 1px 1px 1px black;
+  margin: 0;
+  padding: 0;
 }
 a {
   color: white;
