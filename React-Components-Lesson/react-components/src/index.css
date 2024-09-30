@@ -1,0 +1,19 @@
+.section {
+  background-image: url("../public/galaxy.jpeg");
+  background-size: cover no-repeat;
+  background-position: center;
+  color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  font-size: medium;
+  text-shadow: 1px 1px 1px black;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
