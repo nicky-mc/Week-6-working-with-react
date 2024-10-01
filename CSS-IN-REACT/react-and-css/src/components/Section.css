@@ -78,7 +78,7 @@
 #button3:hover {
   transform: scale(1.05);
   background-color: rgb(255, 123, 109);
-  color: var(--that-specific-orange);
+  color: var(--that-specific-gray);
 }
 #sectionDiv1,
 #sectionDiv2 {
