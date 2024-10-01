@@ -6,7 +6,7 @@ export default function Section(props) {
         <br />
         <h1>{props.mainTitle}</h1>
         <br />
-        <button>Read More</button>
+        <button>{props.button}</button>
         <br />
       </div>
     </div>

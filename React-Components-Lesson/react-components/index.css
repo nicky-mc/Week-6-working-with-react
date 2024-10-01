@@ -20,3 +20,26 @@ a {
   color: white;
   text-decoration: none;
 }
+a:hover {
+  color: #f1f1f1;
+}
+#section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #333;
+}
+button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  font-size: medium;
+  cursor: pointer;
+  font-family: impact;
+  text-shadow: 1px 1px 1px black;
+}
+button:hover {
+  background-color: #9e9898;
+  color: beige;
+}
