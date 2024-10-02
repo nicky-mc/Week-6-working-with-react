@@ -22,7 +22,7 @@ export function App() {
           button element. When the button is clicked, the handleCount function
           is called.{" "}
         </p>
-        <p>handleCount function increments the counter variable by 1.</p>
+        <p>handleCount function increments the counter variable</p>
         <p>
           The updated counter value is then rendered to the screen. <br />
           useState is a React hook that allows you to manage state in a
