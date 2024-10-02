@@ -1,0 +1,37 @@
+body {
+  background-color: dimgray;
+  color: salmon;
+  text-shadow: 1px 1px 1px black;
+  font-family: Comic Sans MS;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: salmon;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px whitesmoke;
+  font-size: 1.5rem;
+}
+h1 {
+  margin: 20px 0;
+  text-decoration: underline;
+}
+h3 {
+  margin: 20px 0;
+  text-decoration: underline;
+}
+p {
+  margin: 20px 0;
+  display: inline-block;
+  border: solid 1px black;
+  box-shadow: 1px 1px 1px whitesmoke;
+  padding: 10px;
+  border-radius: 5px;
+}
