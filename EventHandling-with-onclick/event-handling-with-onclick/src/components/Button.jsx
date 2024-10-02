@@ -3,7 +3,13 @@ import "./Button.css";
 const Counter = () => {
   const [count, setCount] = useState(0);
   const increment = () => setCount((prevCount) => prevCount + 1);
-  const decrement = () => setCount((prevCount) => prevCount - 1);
+  const decrement = () => {
+    if (count > 0) {
+      setCount((prevCount) => prevCount - 1);
+    } else {
+      alert("Cannot go below 0");
+    }
+  };
   const reset = () => setCount(0);
 
   return (
