@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Button.css";
+//this function is a counter that increments by 1, decrements by 1, and resets to ) when the relevant button is clicked
 const Counter = () => {
   const [count, setCount] = useState(0);
   const increment = () => setCount((prevCount) => prevCount + 1);
@@ -10,8 +11,9 @@ const Counter = () => {
       alert("Cannot go below 0");
     }
   };
+  //this function resets the counter to 0
   const reset = () => setCount(0);
-
+  // this is the JSX that will be rendered to the screen
   return (
     <>
       <br />
@@ -23,4 +25,5 @@ const Counter = () => {
     </>
   );
 };
+//this exports the Counter function to be used in other files
 export default Counter;
