@@ -1,12 +1,17 @@
 import Counter from "./components/Button";
+import Data from "./components/Data";
 import "./App.css";
 import "./components/Button.css";
-export function App() {
+
+export default function App() {
   return (
     <div className="page">
       <div className="App">
         <h1>Event Handling with onClick</h1>
         <Counter />
+      </div>
+      <div className="data">
+        <Data />
       </div>
       <div className="main-lesson">
         <h3>How it works</h3>
@@ -36,4 +41,3 @@ export function App() {
     </div>
   );
 }
-export default App;
