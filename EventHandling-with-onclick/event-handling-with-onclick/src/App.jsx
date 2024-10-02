@@ -30,6 +30,9 @@ export function App() {
           useState.{" "}
         </p>
       </div>
+      <div className="footer">
+        <p>© 2024 - Nicky Mortoza-Cowles</p>
+      </div>
     </div>
   );
 }
