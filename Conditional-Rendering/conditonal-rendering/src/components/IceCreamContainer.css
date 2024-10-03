@@ -1,0 +1,39 @@
+.ice-cream-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.ice-cream-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ice-cream-container img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Example of flavour-specific styles */
+.ice-cream-chocolate {
+  background-color: #d2691e;
+  color: white;
+}
+
+.ice-cream-vanilla {
+  background-color: #f3e5ab;
+  color: #8b4513;
+}
+
+.ice-cream-strawberry {
+  background-color: #ffb6c1;
+  color: #8b0000;
+}
+
+/* Add more flavour-specific styles as needed */

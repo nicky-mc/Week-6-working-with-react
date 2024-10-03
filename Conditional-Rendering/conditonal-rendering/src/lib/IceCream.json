@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "name": "Vanilla Dream",
+    "flavour": "Vanilla",
+    "cost": 3.5,
+    "image-path": "../public/images/vanillaDream.jpeg"
+  },
+  {
+    "id": "2",
+    "name": "Chocolate Bliss",
+    "flavour": "Chocolate",
+    "cost": 4.0,
+    "image-path": "../public/images/chocolateBliss.jpeg"
+  },
+  {
+    "id": "3",
+    "name": "Strawberry Delight",
+    "flavour": "Strawberry",
+    "cost": 3.75,
+    "image-path": "../public/images/strawberryDelight.jpeg"
+  },
+  {
+    "id": "4",
+    "name": "Minty Fresh",
+    "flavour": "Mint",
+    "cost": 4.25,
+    "image-path": "../public/images/mintyFresh.jpeg"
+  },
+  {
+    "id": "5",
+    "name": "Cookies and Cream",
+    "flavour": "Cookies and Cream",
+    "cost": 4.5,
+    "image-path": "../public/images/cookiesncream.jpeg"
+  },
+  {
+    "id": "6",
+    "name": "Rocky Road",
+    "flavour": "Chocolate with Marshmallows and Nuts",
+    "cost": 4.75,
+    "image-path": "../public/images/rockyRoad.jpeg"
+  },
+  {
+    "id": "7",
+    "name": "Mango Tango",
+    "flavour": "Mango",
+    "cost": 3.9,
+    "image-path": "../public/images/mangoTango.jpeg"
+  },
+  {
+    "id": "8",
+    "name": "Pistachio Paradise",
+    "flavour": "Pistachio",
+    "cost": 4.1,
+    "image-path": "../public/images/pistachioParadise.jpeg"
+  },
+  {
+    "id": "9",
+    "name": "Caramel Swirl",
+    "flavour": "Caramel",
+    "cost": 4.3,
+    "image-path": "../public/images/caramelSwirl.jpeg"
+  },
+  {
+    "id": "10",
+    "name": "Coffee Craze",
+    "flavour": "Coffee",
+    "cost": 4.2,
+    "image-path": "../public/images/coffeeCraze.jpeg"
+  },
+  {
+    "id": "11",
+    "name": "Lemon Zest",
+    "flavour": "Lemon",
+    "cost": 3.8,
+    "image-path": "../public/images/lemonzest.jpeg"
+  },
+  {
+    "id": "12",
+    "name": "Neapolitan",
+    "flavour": "Chocolate, Vanilla, Strawberry",
+    "cost": 4.0,
+    "image-path": "../public/images/neopolitan.jpeg"
+  }
+]
