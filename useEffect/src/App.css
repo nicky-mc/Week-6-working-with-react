@@ -1,0 +1,253 @@
+/* Add this to your App.css file */
+
+/* Basic reset and body styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Header styles */
+.header {
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  color: #ecf0f1;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.header h1::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background-color: #ecf0f1;
+  bottom: 0;
+  transition: all 0.5s ease;
+}
+
+.header h1:hover {
+  transform: scale(1.05);
+  color: #f39c12;
+}
+
+.header h1:hover::before {
+  left: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+/* Header styles */
+.header {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  transition: transform 0.3s ease;
+}
+
+.header h1:hover {
+  transform: scale(1.05);
+}
+
+/* Main content styles */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+main h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+main h2::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: #3498db;
+  border-radius: 2px;
+}
+
+/* Recipe card styles */
+.recipe-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+.recipe-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #3498db, #2c3e50);
+  z-index: 1;
+}
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.recipe-card-content {
+  padding: 1.5rem;
+}
+
+.recipe-card h2 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-card h3 {
+  color: #7f8c8d;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.recipe-card p {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+}
+
+/* Dynamic hover effect for recipe cards */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.recipe-card:hover {
+  animation: pulse 1s infinite;
+}
+/* Comments section styles */
+.comments-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comments-section h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.comments-section h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #3498db;
+  margin: 10px auto 0;
+}
+
+.comment-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comment-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment-card h3 {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.comment-card p {
+  color: #34495e;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Add a subtle line to separate comments */
+.comment-card:not(:last-child) {
+  border-bottom: 1px solid #ecf0f1;
+  padding-bottom: 1rem;
+}
+
+/* Responsive design for comments */
+@media (min-width: 768px) {
+  .comments-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .comments-section h2 {
+    grid-column: 1 / -1;
+  }
+}
