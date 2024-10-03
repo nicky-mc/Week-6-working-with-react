@@ -23,13 +23,13 @@ AIMS
   - Events
   - useState
   - Conditionals
-- Key words - Conditional rendering - State - onClick - Tenary operators - && and - || or
+- Key words - Conditional rendering - State - onClick - Ternary operators - && and - || or
 
 Conditional Rendering
 
 What does to mean
 
-- Conditonal
+- Conditional
   - There is a condition to render elements
   - Depends on user input/interaction
   - Requires an action
@@ -39,7 +39,7 @@ What does to mean
 - Examples
   - Show the number of cookies if the number is more than 0
   - Error message
-  - Posts aded to a board only visible for logged in users
+  - Posts added to a board only visible for logged in users
   - Shopping baskets
   - Showing a button to return to top if scrolled further down the page
   - Adding deleting or updating a specific entry
