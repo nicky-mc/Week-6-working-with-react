@@ -38,7 +38,7 @@ export default function App() {
     <>
       <div className="header">
         <header>
-          <h1>useEffect</h1>
+          <h1>useEffect - Fetch!</h1>
         </header>
       </div>
       <main>
