@@ -3,6 +3,7 @@ import "./IceCreamContainer.css";
 
 export default function IceCreamContainer(props) {
   const [showInfo, setShowInfo] = useState(false); // showInfo is a state variable that will be used to toggle the display of the ice cream information
+  //this function will be called when the ice cream name is clicked
   function handleClick() {
     setShowInfo(!showInfo);
   }
