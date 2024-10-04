@@ -1,0 +1,42 @@
+.stopwatch {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #000;
+  color: #00ff00;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.stopwatch-controls {
+  margin-top: 10px;
+}
+
+.stopwatch-controls button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.game-container {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.click-button {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.game-stats {
+  margin-bottom: 20px;
+}
+
+.game-controls button {
+  margin: 5px;
+  padding: 5px 10px;
+}
