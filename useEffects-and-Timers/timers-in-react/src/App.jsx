@@ -1,55 +1,60 @@
 import { useEffect, useState } from "react";
 import "./app.css";
-
+// this is the main component
 export default function App() {
+  // useState to keep track of the number of clicks and variable to update the number of clicks per second and multiplier and cookies in the game
   const [clicks, setClicks] = useState(0);
   const [clicksPerSecond, setClicksPerSecond] = useState(0);
   const [multiplier, setMultiplier] = useState(1);
   const [cookies, setCookies] = useState(0);
-
+  // useEffect to update the number of clicks and cookies every second
   useEffect(() => {
+    // setInterval to update the number of clicks and cookies every second
     const myInterval = setInterval(() => {
       setClicks((prevClicks) => prevClicks + clicksPerSecond * multiplier);
       setCookies((prevCookies) => prevCookies + clicksPerSecond * multiplier);
     }, 1000);
-
+    // return to clear the interval
     return () => {
       clearInterval(myInterval);
     };
   }, [clicksPerSecond, multiplier]);
-
+  // handleClick function to update the number of clicks and cookies
   const handleClick = () => {
     setClicks((prevClicks) => prevClicks + clicksPerSecond * multiplier);
     setCookies((prevCookies) => prevCookies + clicksPerSecond * multiplier);
   };
-
+  // increaseClicksPerSecond function to update the number of clicks per second
   const increaseClicksPerSecond = () => {
     setClicksPerSecond((prevCPS) => prevCPS + 1);
   };
-
+  // resetAll function to reset all the values
   const resetAll = () => {
     setClicks(0);
     setClicksPerSecond(0);
     setMultiplier(1);
     setCookies(0);
   };
-
+  // buyMultiplier function to buy the multiplier
   const buyMultiplier = (cost, multiplierValue) => {
     if (cookies >= cost) {
       setMultiplier((prevMultiplier) => prevMultiplier * multiplierValue);
       setCookies((prevCookies) => prevCookies - cost);
     }
   };
-
+  // return the JSX
   return (
+    // div to contain the game
     <div className="game-container">
       <h1>Clicker Game</h1>
       <div>
+        {/* display the number of clicks, clicks per second, and cookies */}
         <h2>Clicks: {clicks}</h2>
         <h3>Clicks per Second: {clicksPerSecond * multiplier}</h3>
         <h3>Cookies: {cookies}</h3>
       </div>
       <div>
+        {/* buttons to click, increase CPS, reset, and buy multipliers */}
         <button onClick={handleClick} className="click-button">
           Click Me!
         </button>
