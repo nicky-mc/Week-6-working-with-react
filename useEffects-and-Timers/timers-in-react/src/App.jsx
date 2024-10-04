@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./app.css";
 // this is the main component
 export default function App() {
+  // a hook in react that allows you to perform side effects in your functional components the difference between a hook and a function is that a hook can have a state and a function can't as well as a hook can have a lifecycle method and a function can't
   // useState to keep track of the number of clicks and variable to update the number of clicks per second and multiplier and cookies in the game
   const [clicks, setClicks] = useState(0);
   const [clicksPerSecond, setClicksPerSecond] = useState(0);
